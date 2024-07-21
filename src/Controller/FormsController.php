@@ -8,7 +8,7 @@ namespace App\Controller;
  *
  * @method \App\Model\Entity\Item[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
-class ItemsController extends AppController
+class FormsController extends AppController
 {
     /**
      * Index method
@@ -18,8 +18,11 @@ class ItemsController extends AppController
     public function index()
     {
         // $items = $this->paginate($this->Items);
-        $query = $this->request->getQueryParams();
-        $items = $query['items'];
+        $items = [
+            'aaaaaaaaaaaaa',
+            'bbbbbbbbbbbbb',
+            'vvvvvvvvvvv',
+        ];
         $this->set(compact('items'));
     }
 
